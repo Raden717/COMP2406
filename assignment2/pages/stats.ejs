@@ -1,0 +1,32 @@
+<html>
+	<head><title>Store Manager Home Page</title></head>
+<body>
+
+	<%- include("../partials/header", {}); %>
+
+	<div id="main">
+		<h1>Statistics of each restaurant</h1>
+	</div>
+
+	<div id="stats">
+
+			<h3><%= restKEYS[0]%></h3>
+			<p>Average cost of an order: <%= statsINFOARA[0]%></p>
+			<p>Total Number of orders: <%= statsINFOARA[1]%></p>
+			<p>Most popular item sold: <%= statsINFOARA[2]%></p>
+
+			<h3><%= restKEYS[1]%></h3>
+			<p>Average cost of an order: <%= statsINFOFRO[0]%></p>
+			<p>Total Number of orders: <%= statsINFOFRO[1]%></p>
+			<p>Most popular item sold: <%= statsINFOFRO[2]%></p>
+
+			<h3><%= restKEYS[2]%></h3>
+			<p>Average cost of an order: <%= statsINFOLEGO[0]%></p>
+			<p>Total Number of orders: <%= statsINFOLEGO[1]%></p>
+			<p>Most popular item sold: <%= statsINFOLEGO[2]%></p>
+
+
+	</div>
+
+</body>
+</html>
