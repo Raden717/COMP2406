@@ -1,0 +1,21 @@
+html
+	head
+		title Store Manager
+body
+	include ../partials/header
+
+br
+
+
+form(method='POST' action='/addrestaurant')
+
+		|Restaurant Name:
+		input#name(type='textbox', placeholder='first and last' name='username')
+		br
+		|Minimum Order:
+		input#min.form-control(type='text', placeholder='first and last' name='name')
+		br
+		|Delivery Fee:
+		input#delivery.form-control(type='text', placeholder='first and last' name='name')
+		br
+		input#submit(type='submit' value='Submit')

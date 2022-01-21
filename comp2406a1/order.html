@@ -1,0 +1,54 @@
+
+<html>
+      <head>
+          <title>Order!</title>
+          <link rel="stylesheet" href="layout.css">
+      </head>
+      <body onload="addRestaurant()">
+        <script src="client.js">  </script>
+
+        <select id = "menu" onchange="main()">
+          <option value="Choose a restaurant">Choose a restaurant here!</option>
+        </select>
+
+        <center><div><h1 id = "1"> The Monch </h1></div><br /></center>
+
+
+
+        <section class="row">
+
+          <div class="column1"><center><b><font size = "6">Categories</font></b></center>
+						<div class="CategoryCol">
+              <ul id = "categories">
+              </ul>
+            </div>
+
+          </div>
+          <div class="column2"><center><b id="column2Title"></b><b id = "Co2Title"> Menu</b></center>
+            <div class="MenuCol">
+              <center><b id = "min1"> Minimum Order: </b> <b id ="min_order"></b> </center>
+              <center><b id = "del1"> Delivery Charge: </b> <b id ="delivery_charge"></b> </center>
+              <ul id = "menuitem">
+
+              </ul>
+            </div>
+
+          </div>
+          <div class="column3"><center><font size = "6"><b>Order Summary</font></b></center>
+            <div class="SummaryCol">
+              <ul id = "summary">
+
+              </ul>
+              <ul id = "totals">
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+
+        </div>
+
+      </body>
+
+</html>

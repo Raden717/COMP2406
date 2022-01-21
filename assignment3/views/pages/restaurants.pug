@@ -1,0 +1,9 @@
+html
+	head
+		title Store Manager
+body
+	include ../partials/header
+	br
+	each restaurant in restaurants
+		a(href=("http://localhost:3000/restaurants/" + restaurant.id)) #{restaurant.name}
+		br

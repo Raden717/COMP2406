@@ -1,0 +1,35 @@
+
+body
+include ../partials/header
+br
+form(method='POST' action='/restaurants')
+	div.form-group
+		|Category:
+		select
+			each menu, s in restaurant.menu
+				option(value=s) #{s}
+		br
+		label(for='name') Name:
+		input#name.form-control(type='text', placeholder='Restaurant Name' name='name')
+		br
+		label(for='price') Price:
+		input#price.form-control(type='text', placeholder='first and last' name='name')
+
+
+|Name: #{restaurant.name}
+br
+|minimum: #{restaurant.min_order}
+br
+|delivery: #{restaurant.delivery_fee}
+br
+
+br
+each menu, cat in restaurant.menu
+	|Category: #{cat}
+	br
+	each item, i in menu
+		|#{item.name} #{item.price} $
+		br
+		|Description: #{item.description}
+		br
+	br
